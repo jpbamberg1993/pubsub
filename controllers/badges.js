@@ -5,7 +5,6 @@ var model = require('../models/badges');
 
 /**
  * Send badges to model to be saved
- *
  */
 exports.save = function(req, res, next) {
 	var badges = _.clone(req.body);
@@ -15,9 +14,8 @@ exports.save = function(req, res, next) {
 	});
 };
 
+/**
+ * Send badges to pub/sub socket in model
+ */
 exports.send = function() {};
 
-/**
- * Send badges to pub/su socket in model
- *
- */
